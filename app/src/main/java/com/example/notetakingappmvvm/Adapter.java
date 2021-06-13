@@ -41,6 +41,10 @@ public class Adapter extends RecyclerView.Adapter<Adapter.NoteHolder> {
         notifyDataSetChanged();
     }
 
+    public Note getNoteAt(int position){
+        return notes.get(position);
+    }
+
     class NoteHolder extends RecyclerView.ViewHolder{
         private TextView txt_title, txt_desc, txt_priority;
 
