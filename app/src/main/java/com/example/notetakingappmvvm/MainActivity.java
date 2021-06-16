@@ -70,6 +70,13 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Note deleted", Toast.LENGTH_SHORT).show();
             }
         }).attachToRecyclerView(recyclerView);
+
+        noteAdapter.setOnItemClickedListener(new Adapter.onItemClickListener() {
+            @Override
+            public void onItemClick(Note note) {
+                Toast.makeText(MainActivity.this, note.getTitle(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override

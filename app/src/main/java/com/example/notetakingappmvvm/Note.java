@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey;
 
 /*
 Entities are the objects that we have to store in DB
-All the fields of this class will bw added as table in the DB
+All the fields of this class will be added as table in the DB
 Room lib saves us from writing boiler plate code for SQLITE
  */
 

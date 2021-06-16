@@ -17,6 +17,7 @@ public class NoteRepository {
         noteDao = database.noteDao();
         allNotes = noteDao.getAllNotes();
     }
+    // Here all these information will be passed to ViewModel
     public void insert(Note note){
         new InsertNoteAsync(noteDao).execute(note);
     }
