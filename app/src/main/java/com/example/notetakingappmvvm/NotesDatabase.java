@@ -18,6 +18,7 @@ public abstract class NotesDatabase extends RoomDatabase {
     public static NotesDatabase instance;
     public abstract NoteDao noteDao();
 
+    // This is how we define singleton class for database
     public static synchronized NotesDatabase getInstance(Context context){
         if(instance == null){
             instance = Room.databaseBuilder(context.getApplicationContext(),NotesDatabase.class
